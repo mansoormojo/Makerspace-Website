@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>THS Makerspace Club</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="manifest" href="./site.webmanifest">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<style>
+		/* The sidebar menu */
+		.sidenav {
+			height: 100%;
+			/* Full-height: remove this if you want "auto" height */
+			width: 150px;
+			/* Set the width of the sidebar */
+			position: fixed;
+			/* Fixed Sidebar (stay in place on scroll) */
+			z-index: 1;
+			/* Stay on top */
+			top: 0;
+			/* Stay at the top */
+			left: 0;
+			background-color: rgb(39, 39, 39);
+			/* Black */
+			overflow-x: hidden;
+			/* Disable horizontal scroll */
+			padding-top: 20px;
+			font-size: 48px;
+		}
+
+		/* The navigation menu links */
+		.sidenav a {
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+			font-size: 28px;
+			color: #818181;
+			display: block;
+		}
+
+		/* When you mouse over the navigation links, change their color */
+		.sidenav a:hover {
+			color: #f1f1f1;
+			font-size: 32px;
+		}
+
+		/* Style page content */
+		.main {
+			margin-left: 160px;
+			/* Same as the width of the sidebar */
+			padding: 0px 10px;
+		}
+
+		/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+		@media screen and max-height=450px {
+			.sidenav {
+				padding-top: 8px
+			}
+			.sidenav a {
+				font-size: 28px;
+			}
+		}
+
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 75%;
+		}
+
+		.centerss {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.centertitle {
+			width: auto;
+			padding: 12px 2px
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		/* Position the image container (needed to position the left and right arrows) */
+		.container {
+			position: relative;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+			display: none;
+		}
+
+		/* Add a pointer when hovering over the thumbnail images */
+		.cursor {
+			cursor: pointer;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 40%;
+			width: auto;
+			padding: 16px;
+			margin-top: -50px;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+			-webkit-user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		/* Container for image text */
+		.caption-container {
+			text-align: center;
+			background-color: #222;
+			padding: 2px 16px;
+			color: white;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Six columns side by side */
+		.column {
+			float: left;
+			width: 10%;
+		}
+
+		/* Add a transparency effect for thumnbail images */
+		.demo {
+			opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Side navigation -->
+	<div class="sidenav">
+		<a href="/"><img src="images/DALLE_2022-08-28_20.12.07_-_A_rocket_launching_with_a_spiral_trail_behind_it_as_a_logo.png" class="center"></img></a>
+    <a href="/#about">About</a>
+    <a href="/#services">Services</a>
+    <a href="/#order">Order</a>
+    <a href="/credits.html">Credits &</br> Feedback</a>
+    <a href="3DViewer.html">3DViewer</a>
+  </div>
+
+        <!-- Page content -->
+        <div class="main">
+            <div id="about" class="centertitle" style="background-color:#134a84; font-size:24px" align="center">
+                <h1>TRACY HIGH SCHOOL'S MAKERSPACE CLUB</h1>
+            </div>
+            <img src="projects/Bulldog.JPG" width=50% class="centerss">
+            <div id="services">
+                <h3>You may <a href="#order">Send an order</a> to make an appointment for your 3D printing needs.<br><br>
+                For more information on what we have done: check out these amazing 3D prints!
+              </h3>
+                <!-- Container for the image gallery -->
+                <div class="container">
+
+                  <!-- Full-width images with number text -->
+                  
+                  <div class="mySlides">
+                      <img src="projects/Octopus.GIF" style="height:450px" class="centerss">
+                  </div>
+
+                  <div class="mySlides">
+                      <img src="projects/Mewtwo.JPG" style="height:450px" class="centerss">
+                  </div>
+
+                  <div class="mySlides">
+                      <img src="projects/Infinity_Cube.JPG" style="height:450px" class="centerss">
+                  </div>
+
+                  <div class="mySlides">
+		                  <img src="projects/Bulldog.JPG" style="height:450px" class="centerss">
+		              </div>
+
+                  <div class="mySlides">
+                      <img src="projects/Charizard_Blastoise.JPG" style="height:450px" class="centerss">
+                  </div>
+
+                  <div class="mySlides">
+                      <img src="projects/Baby_Yoda.JPG" style="height:450px" class="centerss">
+                  </div>
+
+                  <div class="mySlides">
+                      <img src="projects/Gengar.JPG" style="height:450px" class="centerss">
+                  </div>
+
+                  <div class="mySlides">
+                      <img src="projects/XBox_Stand.JPG" style="height:450px" class="centerss">
+                  </div>
+		              <div class="mySlides">
+		                  <img src="projects/Desktop_Custom_Design.JPG" style="height:450px" class="centerss">
+		              </div>
+		              <div class="mySlides">
+		                  <img src="projects/PS4_Stand.JPG" style="height:450px" class="centerss">
+		              </div>
+                  <div class="mySlides">
+		                  <img src="projects/Stormtrooper.JPG" style="height:450px" class="centerss">
+		              </div>
+                  <div class="mySlides">
+		                  <img src="projects/Unicorn.JPG" style="height:450px" class="centerss">
+		              </div>
+                  <div class="mySlides">
+		                  <img src="projects/TRex_Cup.JPG" style="height:450px" class="centerss">
+		              </div>
+                  <div class="mySlides">
+		                  <img src="projects/Dragon.JPG" style="height:450px" class="centerss">
+		              </div>
+                  <!--<div class="mySlides">
+		                  <img src="projects/Maintenance.JPG" style="height:450px" class="centerss">
+		              </div>-->
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+        </div>
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="projects/Octopus.t.JPG" style="width:100%" onclick="currentSlide(1)" alt="Octopus">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="projects/Mewtwo.t.JPG" style="width:100%" onclick="currentSlide(2)" alt="Pokemon MewTwo on a Pedestal">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="projects/Infinity_Cube.t.JPG" style="width:100%" onclick="currentSlide(3)" alt="Infinity Cube">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="projects/Bulldog.t.JPG" style="width:100%" onclick="currentSlide(4)" alt="Tracy High Bulldog Spirit">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="projects/Charizard_Blastoise.t.JPG" style="width:100%" onclick="currentSlide(5)" alt="Pokemon Charizard vs Blastoise">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="projects/Baby_Yoda.t.JPG" style="width:100%" onclick="currentSlide(6)" alt="The Mandalorian Baby Yoda">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="projects/Gengar.t.JPG" style="width:100%" onclick="currentSlide(7)" alt="Pokemon Gengar">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="projects/XBox_Stand.t.JPG" style="width:100%" onclick="currentSlide(8)" alt="XBox Controller Stand">
+          </div>
+      	  <div class="column">
+      	    <img class="demo cursor" src="projects/Desktop_Custom_Design.t.JPG" style="width:100%" onclick="currentSlide(9)" alt="Desktop Custom Designs">
+      	  </div>
+      	  <div class="column">
+      	    <img class="demo cursor" src="projects/PS4_Stand.t.JPG" style="width:100%" onclick="currentSlide(10)" alt="Playstation 4 Controller Stand">
+      	  </div>
+          <div class="column">
+      	    <img class="demo cursor" src="projects/Stormtrooper.t.JPG" style="width:100%" onclick="currentSlide(11)" alt="Star Wars Full-Size Soldier Head">
+      	  </div>
+          <div class="column">
+      	    <img class="demo cursor" src="projects/Unicorn.t.JPG" style="width:100%" onclick="currentSlide(12)" alt="Majestic Unicorn">
+      	  </div>
+          <div class="column">
+      	    <img class="demo cursor" src="projects/TRex_Cup.t.JPG" style="width:100%" onclick="currentSlide(13)" alt="Tyrannosaurus Rex Skull Cup Holder">
+      	  </div>
+          <div class="column">
+      	    <img class="demo cursor" src="projects/Dragon.t.JPG" style="width:100%" onclick="currentSlide(14)" alt="Majestic Dragon">
+      	  </div>
+          <!--<div class="column">
+      	    <img class="demo cursor" src="projects/Maintenance.t.JPG" style="width:100%" onclick="currentSlide(15)" alt="Maintenance on 3D Printer">
+      	  </div>-->
+        </div>
+      </div>
+
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+      <h3>
+        Of course, our only limit is your imagination!
+    </div>
+    <div id="order">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfi0pMD24iWmPNG_D9jNfq8v19GHdm0vERR_V64aU3njuApg/viewform?embedded=true" width="100%" height="735" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    <p style="font-size: 7px">Website Created by Anmol Kapoor via THS Programming Club '20</p>
+  </div>
+</body>
+</html>
